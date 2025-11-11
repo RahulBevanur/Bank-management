@@ -1,11 +1,11 @@
 package com.project.bankmanagement.auth_user.dto;
-package com.project.bankmanagement.auth_user.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.project.bankmanagement.account.dto.AccountDTO;
 import com.project.bankmanagement.role.entity.Role;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
@@ -31,9 +31,9 @@ public class UserDTO {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String Firstname;
-    private String LastName;
-    private String PhoneNumber;
+    private String firstName;
+    private String lastName;
+    private String phoneNumber;
 
 
     private String email;

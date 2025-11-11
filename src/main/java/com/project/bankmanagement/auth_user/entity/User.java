@@ -1,6 +1,7 @@
 package com.project.bankmanagement.auth_user.entity;
 
 
+import com.project.bankmanagement.account.entity.Account;
 import com.project.bankmanagement.role.entity.Role;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
@@ -24,9 +25,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String Firstname;
-    private String LastName;
-    private String PhoneNumber;
+    private String firstName;
+    private String lastName;
+    private String phoneNumber;
 
     @Email
     @Column(unique = true,nullable = false)

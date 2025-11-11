@@ -1,5 +1,5 @@
 package com.project.bankmanagement.enums;
 
-public enum TranscationStatus {
+public enum TransactionStatus {
     SUCCESS, FAILED, PENDING
 }
